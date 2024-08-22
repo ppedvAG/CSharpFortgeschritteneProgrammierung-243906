@@ -9,7 +9,7 @@ internal class Program
 		string readJson = File.ReadAllText(@"..\..\..\Personen.json");
 		List<Person> personen = JsonSerializer.Deserialize<List<Person>>(readJson)!;
 		#endregion
-		
+
 		//Hier eigenen Code schreiben
 	}
 }

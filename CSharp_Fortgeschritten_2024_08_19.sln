@@ -15,9 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uebung", "Uebung\Uebung.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatesWPF", "DelegatesWPF\DelegatesWPF.csproj", "{E0F9167C-756A-4686-81A9-3015058D3154}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UebungDelegates", "UebungDelegates\UebungDelegates.csproj", "{D74232D2-08D6-44B2-AE21-C8C1B6632C70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UebungDelegates", "UebungDelegates\UebungDelegates.csproj", "{D74232D2-08D6-44B2-AE21-C8C1B6632C70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqErweiterungsmethoden", "LinqErweiterungsmethoden\LinqErweiterungsmethoden.csproj", "{EA8CEBB3-574C-424F-9490-7B3C2A0DF65E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqErweiterungsmethoden", "LinqErweiterungsmethoden\LinqErweiterungsmethoden.csproj", "{EA8CEBB3-574C-424F-9490-7B3C2A0DF65E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialisierung", "Serialisierung\Serialisierung.csproj", "{BEE1D4C5-CEE0-476F-AFFB-B2E720BB3BAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multitasking", "Multitasking\Multitasking.csproj", "{F6D33645-6B72-4A32-9683-543FFD539188}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{EA8CEBB3-574C-424F-9490-7B3C2A0DF65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA8CEBB3-574C-424F-9490-7B3C2A0DF65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA8CEBB3-574C-424F-9490-7B3C2A0DF65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE1D4C5-CEE0-476F-AFFB-B2E720BB3BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE1D4C5-CEE0-476F-AFFB-B2E720BB3BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE1D4C5-CEE0-476F-AFFB-B2E720BB3BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE1D4C5-CEE0-476F-AFFB-B2E720BB3BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D33645-6B72-4A32-9683-543FFD539188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D33645-6B72-4A32-9683-543FFD539188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D33645-6B72-4A32-9683-543FFD539188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D33645-6B72-4A32-9683-543FFD539188}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
