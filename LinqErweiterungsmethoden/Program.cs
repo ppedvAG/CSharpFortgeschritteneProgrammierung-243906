@@ -215,13 +215,13 @@ internal class Program
 		//Erweiterungsmethoden
 		//Alle Linq Methoden sind selbst Erweiterungsmethoden auf IEnumerable<T>
 		//Dadurch ist es möglich, auf Listentypen in C# Linq anzuwenden
-		int i = 3284;
-		i.Quersumme();
+		int zahl = 3284;
+		zahl.Quersumme();
         Console.WriteLine(28395798.Quersumme());
 
 		//Wie funktionieren Erweiterungsmethoden im Hintergrund?
-		i.Quersumme(); //->
-		ExtensionMethods.Quersumme(i);
+		zahl.Quersumme(); //->
+		ExtensionMethods.Quersumme(zahl);
 
 		//Linq Umbau
 		fahrzeuge.Where(f => f.MaxV >= 250);
