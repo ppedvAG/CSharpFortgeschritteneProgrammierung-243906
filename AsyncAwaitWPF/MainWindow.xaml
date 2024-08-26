@@ -8,7 +8,8 @@
 		<Button Click="Button_Click" Content="Start"/>
 		<Button Click="Button_Click_ContinueWith" Content="Start Continue With"/>
 		<Button Click="Button_Click_Async" Content="Start Async"/>
-		<Button Content="Start Continue With Async"/>
+		<Button Click="Button_Click_AsyncDataSource" Content="Start Async Data Source"/>
+		<Button Click="Button_Click_Parallel_ForEachAsync" Content="Start Parallel.ForEachAsync"/>
 		<Button Click="Request" Content="Webrequest starten" Name="ReqButton"/>
 		<ProgressBar Height="30" IsIndeterminate="True"/>
 		<ScrollViewer x:Name="Scroll" Height="300">

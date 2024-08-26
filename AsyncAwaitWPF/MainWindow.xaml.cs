@@ -87,4 +87,40 @@ public partial class MainWindow : Window
 		Info.Text = s;
 		ReqButton.IsEnabled = true;
 	}
+
+	private async void Button_Click_AsyncDataSource(object sender, RoutedEventArgs e)
+	{
+		//Wenn eine Zahl erzeugt wird, soll diese angezeigt werden
+		//Wir wissen nicht, wann die nächste Zahl kommt -> await
+		AsyncDataSource ds = new();
+		await foreach (int x in ds.GetNumbers()) //Wenn die Schleife läuft, warte hier auf den nächsten Wert
+		{
+			Info.Text += x + "\n";
+		}
+	}
+
+	private async void Button_Click_Parallel_ForEachAsync(object sender, RoutedEventArgs e)
+	{
+		List<int> ints = Enumerable.Range(0, 100).Select(e => Random.Shared.Next()).ToList();
+
+		//List<int> zahlen = [];
+		//for (int i = 0; i < 100; i++)
+		//	zahlen.Add(Random.Shared.Next());
+
+		//Mehrere Tasks gleichzeitig starten
+		//await Parallel.ForEachAsync(ints, (i, ct) =>
+		//{
+		//	Dispatcher.Invoke(() => Info.Text += i + "\n");
+		//	return ValueTask.CompletedTask;
+		//});
+
+		//Alternative
+		List<Task> tasks = [];
+		foreach (int x in ints)
+		{
+			Task t = Task.Run(() => Dispatcher.Invoke(() => Info.Text += x + "\n"));
+			tasks.Add(t);
+		}
+		await Task.WhenAll(tasks);
+	}
 }
